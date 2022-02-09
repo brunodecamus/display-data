@@ -1,0 +1,11 @@
+{
+  "name": "display-data",
+  "version": "1.0.0",
+  "description": "Application angular qui permet d'afficher tout type de données",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Decamus",
+  "license": "ISC"
+}
