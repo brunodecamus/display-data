@@ -1,0 +1,69 @@
+/* SCSS HEX */
+
+$deep-space-sparkle: #4c5b5cff;
+$bittersweet: #ff715bff;
+$sunglow: #f9cb40ff;
+$bitter-lime: #bced09ff;
+$blue-ryb: #2f52e0ff;
+// 
+// Pour tout
+//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: $sunglow;
+    padding: 10px 50px;
+    background-color: $deep-space-sparkle;
+}
+
+header h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    align-self: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    margin: 0px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+a.btn {
+    color: #403F4C;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: $sunglow;
+    font-weight: 800;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
