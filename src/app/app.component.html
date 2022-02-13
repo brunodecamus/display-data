@@ -3,13 +3,9 @@
     <nav>
         <li> <a [routerLink]="'/products'">Products</a></li>
         <li> <a [routerLink]="'/products/8'">Detail</a></li>
-        <li> <a [routerLink]="'/products/9'">About</a></li>
+        <li> <a [routerLink]="'/about'">About</a></li>
     </nav>
 </header>
 <section class="content">
-    <div>
-        L1<br> L2 <br> L3 <br> L4 <br>
-        <router-outlet></router-outlet>
-        yy
-    </div>
+    <router-outlet></router-outlet>
 </section>
