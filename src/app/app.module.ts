@@ -8,6 +8,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { AboutComponent } from './about/about.component';
 import { Test1Component } from './about/test1/test1.component';
 import { Test2Component } from './about/test2/test2.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Test2Component } from './about/test2/test2.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
