@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { RandomUserService } from '../services/random-user.service';
 
 @Component({
   selector: 'app-product-list',
@@ -11,10 +12,15 @@ export class ProductListComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 
-
-  constructor() { }
+  constructor(
+    public randomUserService: RandomUserService
+  ) { }
 
   ngOnInit(): void {
+    console.info('init');
+    console.info(this.randomUserService.test());
+    console.info('end');
+
   }
 
   //@ViewChild(MatPaginator) paginator: MatPaginator;
