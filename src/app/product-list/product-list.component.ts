@@ -20,16 +20,13 @@ export class ProductListComponent implements OnInit, AfterViewInit {
     console.info('init');
     console.info(this.randomUserService.test());
     console.info('end');
-
   }
 
-  //@ViewChild(MatPaginator) paginator: MatPaginator;
 
   ngAfterViewInit() {
-    //this.dataSource.paginator = this.paginator;
+    console.info('init');
   }
 }
-
 
 export interface PeriodicElement {
   name: string;
