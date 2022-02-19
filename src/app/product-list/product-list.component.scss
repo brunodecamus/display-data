@@ -1,38 +1,38 @@
 table {
-    width: 80%;
+  width: 80%;
 }
 
 .mat-column-position {
-    width: 10px;
-    border-right: 1px solid currentColor;
-    padding-right: 0px;
-    padding-left: 0px;
-    text-align: center;
-    color: rosybrown;
+  width: 10px;
+  border-right: 1px solid currentColor;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center;
+  color: rosybrown;
 }
 
 .mat-column-name {
-    padding-right: 0px;
-    padding-left: 0px;
-    text-align: center;
-    color: blue;
-    white-space: normal;
-    word-wrap: break-word;
-    max-width: 100px;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center;
+  color: blue;
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 100px;
 }
 
 .mat-column {
-    padding-right: 0px;
-    padding-left: 0px;
-    text-align: center;
-    color: rgb(30, 255, 0);
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center;
+  color: aqua;
 }
 
 td.mat-cell:first-of-type,
 th.mat-header-cell:first-of-type,
 td.mat-cell:first-of-type {
-    padding-right: 0px;
-    padding-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 // .mat-cell {
