@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { MatTableDataSource } from '@angular/material/table';
 import { RandomUserService } from '../services/random-user.service';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-product-list',
@@ -11,6 +11,11 @@ export class ProductListComponent implements OnInit, AfterViewInit {
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+  displayedColumns2: string[] = ['gender', 'title', 'first', 'last', 'email', 'picture'];
+
+
+
+  dataSource2 = new MatTableDataSource<any>([]);
 
   constructor(
     public randomUserService: RandomUserService
@@ -19,6 +24,28 @@ export class ProductListComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     console.info('init');
     console.info(this.randomUserService.test());
+
+    this.dataSource2.data = [{ mail: 'dd' }];
+
+
+    this.randomUserService.getPosts().subscribe(
+      (data: any) => {
+        console.info(data);
+
+        const tmp: any[] = [];
+        for (let index = 0; index < data.results.length; index++) {
+          const element = data.results[index];
+          console.info('- element:', element);
+
+          tmp.push(element)
+        }
+        this.dataSource2.data = tmp;
+        console.info('dataSource2:', this.dataSource2.data);
+      },
+      (error) => { console.error(error); }
+    );
+
+    console.info('dataSource2:', this.dataSource2);
     console.info('end');
   }
 
