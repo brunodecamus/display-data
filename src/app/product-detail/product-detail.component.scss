@@ -1,0 +1,32 @@
+.classForm {
+    display: flex;
+    width: 80%;
+    margin: 20px;
+    flex-direction: column;
+    background-color: white;
+    opacity: 10;
+}
+
+.classTest1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.classTest2 {
+    width: 100px;
+    max-width: 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.classTest3 {
+    width: 25em;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.classTest4 {
+    width: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
