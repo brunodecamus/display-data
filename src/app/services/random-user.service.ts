@@ -25,6 +25,6 @@ export class RandomUserService {
   }
 
   getPosts(): Observable<any> {
-    return this.http.get('https://randomuser.me/api/?results=1000');
+    return this.http.get('https://randomuser.me/api/?results=10');
   }
 }
