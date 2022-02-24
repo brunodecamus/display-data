@@ -37,6 +37,19 @@ table {
     max-width: 100px;
 }
 
+.mat-header-cell {
+    color: #f9cb40ff;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #f9cb40ff;
+}
+
+.mat-row {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+}
+
 .mat-column-weight {
     border-right: 1px solid currentColor;
     color: $deep-space-sparkle;

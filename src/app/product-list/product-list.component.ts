@@ -1,5 +1,8 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+
 import { RandomUserService } from '../services/random-user.service';
+import { ChangeDetectorRef } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
@@ -9,13 +12,13 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class ProductListComponent implements OnInit, AfterViewInit {
 
+  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
+
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+
   displayedColumns2: string[] = ['gender', 'title', 'first', 'last', 'email', 'picture'];
-
-
-
-  dataSource2 = new MatTableDataSource<any>([]);
+  dataSource2 = new MatTableDataSource<PeriodicElement>([]);
 
   constructor(
     public randomUserService: RandomUserService
@@ -24,10 +27,7 @@ export class ProductListComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     console.info('init');
     console.info(this.randomUserService.test());
-
-    this.dataSource2.data = [{ mail: 'dd' }];
-
-
+    this.dataSource2.data = [];
     this.randomUserService.getPosts().subscribe(
       (data: any) => {
         console.info(data);
@@ -36,7 +36,6 @@ export class ProductListComponent implements OnInit, AfterViewInit {
         for (let index = 0; index < data.results.length; index++) {
           const element = data.results[index];
           console.info('- element:', element);
-
           tmp.push(element)
         }
         this.dataSource2.data = tmp;
@@ -52,6 +51,7 @@ export class ProductListComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     console.info('init');
+    this.dataSource2.paginator = this.paginator;
   }
 }
 
