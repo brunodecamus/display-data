@@ -20,6 +20,8 @@ export class ProductListComponent implements OnInit, AfterViewInit {
   displayedColumns2: string[] = ['gender', 'title', 'first', 'last', 'email', 'picture'];
   dataSource2 = new MatTableDataSource<PeriodicElement>([]);
 
+  panelOpenState = false;
+
   constructor(
     public randomUserService: RandomUserService
   ) { }
