@@ -67,7 +67,8 @@ export interface PeriodicElement {
 const ELEMENT_DATA: PeriodicElement[] = [
   { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
   { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 6, name: 'CarbonCarbonCarbonCarbonCarbonCarbonCarbonCarbonCarbonCarbonCarbonCarbon', weight: 12.0107, symbol: 'C' },
-  { position: 8, name: 'Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen ', weight: 15.9994, symbol: 'O' },
+  { position: 6, name: 'CarbonCarbonCarbdfgndfngvfdjgndfngkjdfnb df X', weight: 12.0107, symbol: 'C' },
+  { position: 7, name: 'Oxdfngf, g tjgh treh erg idfg ldf lkdfnvn blkjdfn bkldfbdbdfbk ndfen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen X', weight: 15.9994, symbol: 'O' },
+  { position: 8, name: 'Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen Oxygen X', weight: 15.9994, symbol: 'O' },
   { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
 ];

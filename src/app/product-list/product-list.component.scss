@@ -27,13 +27,17 @@ table {
 }
 
 .mat-column-name {
-    padding-right: 0px;
-    padding-left: 0px;
-    text-align: center;
-    border-right: 1px solid currentColor;
-    color: $deep-space-sparkle;
-    white-space: normal;
-    word-wrap: break-word;
+    // padding-right: 0px;
+    // padding-left: 0px;
+    // text-align: center;
+    // border-right: 1px solid currentColor;
+    // color: $deep-space-sparkle;
+    // white-space: normal;
+    // word-wrap: break-word;
+    // color: #bced09ff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     max-width: 100px;
 }
 
