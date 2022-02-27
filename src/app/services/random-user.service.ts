@@ -21,10 +21,10 @@ export class RandomUserService {
 
 
   getConfig() {
-    return this.http.get<any>('https://randomuser.me/api/?results=5');
+    return this.http.get<any>('https://randomuser.me/api/?results=20');
   }
 
   getPosts(): Observable<any> {
-    return this.http.get('https://randomuser.me/api/?results=5');
+    return this.http.get('https://randomuser.me/api/?results=20');
   }
 }
