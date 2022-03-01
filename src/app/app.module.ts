@@ -17,6 +17,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogSampleComponent } from './dialog-sample/dialog-sample.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     ProductDetailComponent,
     AboutComponent,
     Test1Component,
-    Test2Component
+    Test2Component,
+    DialogSampleComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     MatExpansionModule,
     MatButtonModule,
     MatTooltipModule,
+    MatDialogModule,
     FormsModule,
     HttpClientModule,
   ],
