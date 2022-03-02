@@ -1,0 +1,23 @@
+$deep-space-sparkle: #4c5b5cff;
+$bittersweet: #ff715bff;
+$sunglow: #f9cb40ff;
+$bitter-lime: #bced09ff;
+$blue-ryb: #2f52e0ff;
+.content {
+    // width: 100%;
+    width: 3000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+td.mat-cell,
+th.mat-header-cell,
+td.mat-cell {
+    padding-right: 0px;
+    padding-left: 0px;
+    border-right: 1px solid currentColor;
+    color: $deep-space-sparkle;
+    text-align: center;
+}

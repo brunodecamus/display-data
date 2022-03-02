@@ -19,6 +19,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductListComponent } from './product-list/product-list.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogSampleComponent } from './dialog-sample/dialog-sample.component';
+import { CustomTableComponent } from './custom-table/custom-table.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { DialogSampleComponent } from './dialog-sample/dialog-sample.component';
     AboutComponent,
     Test1Component,
     Test2Component,
-    DialogSampleComponent
+    DialogSampleComponent,
+    CustomTableComponent
   ],
   imports: [
     BrowserModule,
