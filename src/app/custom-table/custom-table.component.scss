@@ -4,12 +4,22 @@ $sunglow: #f9cb40ff;
 $bitter-lime: #bced09ff;
 $blue-ryb: #2f52e0ff;
 .content {
-    // width: 100%;
-    width: 3000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 100%;
+    //min-width: 900px;
+    //max-width: 1800px;
+    //width: 1500px;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: center;
     padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: $bitter-lime;
+}
+
+.mat-header-row,
+.mat-row {
+    //min-width: 2000px;
 }
 
 td.mat-cell,
