@@ -18,7 +18,7 @@ export class CustomTableComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.randomUserService.getRandomUsers().subscribe(
+    this.randomUserService.getRandomUsers(20).subscribe(
       value => {
         console.log('value: ', value);
         console.log('value.results: ', value.results);
