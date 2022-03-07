@@ -1,6 +1,14 @@
 <h2>Custom table</h2>
 
-<div class="example-container mat-elevation-z8">
+<mat-form-field>
+    <input matInput #txtVal1 (keyup)="applyFilter1(txtVal1.value)" placeholder="Search" name="search">
+</mat-form-field>
+&nbsp;&nbsp;
+<mat-form-field>
+    <input matInput #txtVal2 (keyup)="applyFilter2(txtVal2)" placeholder="Filter">
+</mat-form-field>
+
+<div class="example-container">
 
     <table mat-table [dataSource]="persons">
 

@@ -29,4 +29,16 @@ export class CustomTableComponent implements OnInit {
       }
     );
   }
+
+  applyFilter1(value: string) {
+    console.log('applyFilter:', value);
+    this.persons.filter = value.trim().toLowerCase();
+
+  }
+
+  applyFilter2(value: any) {
+    console.log('applyFilter:');
+    console.log(value);
+  }
+
 }
