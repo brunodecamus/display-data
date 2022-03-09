@@ -31,8 +31,8 @@ export class CustomTableComponent implements OnInit {
   }
 
   applyFilter1(value: string) {
-    console.log('applyFilter:', value);
-    this.persons.filter = value.trim().toLowerCase();
+    console.log('applyFilter:', value, value.trim().toLocaleLowerCase());
+    this.persons.filter = value.trim().toLocaleLowerCase();
 
   }
 

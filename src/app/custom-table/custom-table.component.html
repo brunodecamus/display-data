@@ -20,12 +20,12 @@
         <!-- first Column -->
         <ng-container matColumnDef="first" sticky>
             <th mat-header-cell *matHeaderCellDef> first </th>
-            <td mat-cell *matCellDef="let element"> {{element.name.first}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.name.first | makeBold: persons.filter}} </td>
         </ng-container>
         <!-- last Column -->
         <ng-container matColumnDef="last" sticky>
             <th mat-header-cell *matHeaderCellDef> last </th>
-            <td mat-cell *matCellDef="let element"> {{element.name.last}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.name.last | makeBold: persons.filter}} </td>
         </ng-container>
 
         <!-- street Column -->

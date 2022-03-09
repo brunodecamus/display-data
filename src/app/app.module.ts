@@ -20,6 +20,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogSampleComponent } from './dialog-sample/dialog-sample.component';
 import { CustomTableComponent } from './custom-table/custom-table.component';
+import { MakeBoldPipe } from './pipes/make-bold.pipe';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CustomTableComponent } from './custom-table/custom-table.component';
     Test1Component,
     Test2Component,
     DialogSampleComponent,
-    CustomTableComponent
+    CustomTableComponent,
+    MakeBoldPipe
   ],
   imports: [
     BrowserModule,
